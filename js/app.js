@@ -3802,6 +3802,29 @@
                 },
                 on: {}
             });
+            new core(".blog__slider", {
+                modules: [ Navigation, Pagination ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 10,
+                speed: 500,
+                grabCursor: true,
+                loop: true,
+                watchOverflow: true,
+                pagination: {
+                    el: ".blog__pages",
+                    clickable: true,
+                    renderBullet: function(index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + "</span>";
+                    }
+                },
+                navigation: {
+                    prevEl: ".blog__arrow-prev",
+                    nextEl: ".blog__arrow-next"
+                },
+                on: {}
+            });
         }
     }
     window.addEventListener("load", (function(e) {

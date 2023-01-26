@@ -1270,6 +1270,10 @@ h6 {
   }
 }
 
+.blog__column {
+  min-width: 0;
+}
+
 .blog__list {
   display: -ms-grid;
   display: grid;
@@ -1385,15 +1389,19 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   gap: 0.1875rem;
-}
-
-.blog__page-button {
-  letter-spacing: -0.03em;
   font-weight: 600;
+  letter-spacing: -0.03em;
   color: #7A7A7A;
+  max-width: 3.125rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.blog__page-button._active {
+.blog__pages .swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+.blog__pages .swiper-pagination-bullet-active {
   color: #508BFF;
 }
 
@@ -1825,6 +1833,12 @@ h6 {
 
   .blog__subtitle {
     padding-top: 1.25rem;
+  }
+
+  .blog__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
