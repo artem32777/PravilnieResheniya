@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230126110154">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230126120311">
 	<link rel="shortcut icon" href="img/favicon.svg">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -180,10 +180,11 @@
 					</div>
 					<div class="price__column"></div>
 				</section>
-				<section class="page__staff staff columns mb">
+				<section class="page__staff columns staff mb">
 					<div class="staff__column">
 						<div class="staff__arrows">
 							<button title="Предыдущий слайд" type="button" class="staff__arrow-prev arrow"></button>
+							<div class="staff__pagination"></div>
 							<button title="Следующий слайд" type="button" class="staff__arrow-next arrow"></button>
 						</div>
 					</div>
@@ -236,7 +237,7 @@
 					</div>
 					<div class="request__column">
 						<div class="request__decor decor"><span></span></div>
-						<h3 class="request__subtitle">Хотите оптимизировать вашу бухгалтерию?Начните сотрудничество с нами прямо сейчас</h3>
+						<h3 class="request__subtitle">Хотите оптимизировать вашу бухгалтерию? Начните сотрудничество с нами прямо сейчас</h3>
 						<form data-dev action="#" class="request__form">
 							<h4 class="request__form-title">Заполните форму:</h4>
 							<input id="input" data-required autocomplete="off" type="text" name="form[]" data-error="" placeholder="Фамилия Имя Отчество*" class="request__input">
@@ -283,8 +284,8 @@
 						</ul>
 						<div class="blog__pagination">
 							<button type="button" class="blog__arrow-prev">
-								Назад
 								<img src="img/arrow.svg" alt="Предыдущий слайд">
+								Назад
 							</button>
 							<ul class="blog__pages">
 								<li class="blog__page"><button type="button" class="blog__page-button _active">1</button></li>
@@ -292,7 +293,10 @@
 								<li class="blog__page"><button type="button" class="blog__page-button">3</button></li>
 								<li class="blog__page"><button type="button" class="blog__page-button">4</button></li>
 							</ul>
-							<button type="button" class="blog__arrow-next">Вперёд</button>
+							<button type="button" class="blog__arrow-next">
+								Вперёд
+								<img src="img/arrow.svg" alt="Следующий слайд">
+							</button>
 						</div>
 					</div>
 					<div class="blog__column"></div>
@@ -333,7 +337,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230126110154"></script>
+	<script src="js/app.min.js?_v=20230126120311"></script>
 </body>
 
 </html>
