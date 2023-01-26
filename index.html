@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230125131725">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230126110154">
 	<link rel="shortcut icon" href="img/favicon.svg">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,21 +20,11 @@
 					<img src="img/logo.svg" alt="Логотип">
 				</a>
 				<ul class="header__menu">
-					<li class="header__link">
-						<a href="#">О компании</a>
-					</li>
-					<li class="header__link">
-						<a href="#">Блог</a>
-					</li>
-					<li class="header__link">
-						<a href="#">Услуги</a>
-					</li>
-					<li class="header__link">
-						<a href="#">Калькулятор</a>
-					</li>
-					<li class="header__link">
-						<a href="#">Контакты</a>
-					</li>
+					<li data-goto=".page__about" data-goto-header class="header__link">О компании</li>
+					<li data-goto=".page__blog" data-goto-header data-goto-header class="header__link">Блог</li>
+					<li data-goto=".page__services" data-goto-header data-goto-header class="header__link">Услуги</li>
+					<li data-goto=".page__price" data-goto-header data-goto-header class="header__link">Прайс-лист</li>
+					<li data-goto="footer" data-goto-header data-goto-header class="header__link">Контакты</li>
 				</ul>
 				<a href="tel:88005553535" class="header__phone hover">
 					<svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,32 +39,32 @@
 					</svg>
 					8-800-555-3535
 				</a>
-				<button type="button" class="header__burger icon-menu"><span></span></button>
+				<button hidden type="button" class="header__burger icon-menu"><span></span></button>
 			</nav>
 		</header>
 		<main class="page">
 			<div class="page__container">
-				<section class="page__main main mb">
+				<section class="page__main main">
+					<picture><source srcset="img/main-page/main-block.webp" type="image/webp"><img src="img/main-page/main-block.jpg" alt="Изображение" class="main__image"></picture>
 					<div class="main__labels h">
 						<p class="main__label">Сопровождаем бизнес на всех этапах</p>
 						<p class="main__label">Беремся за проекты любой сложности</p>
 					</div>
 					<h1 class="main__title">Безупречный порядок в бухгалтерии</h1>
 					<button type="button" class="main__button btn">Оставить заявку</button>
-					<picture><source srcset="img/main-page/main-block.webp" type="image/webp"><img src="img/main-page/main-block.jpg" alt="Изображение" class="main__image"></picture>
 				</section>
 				<section class="page__about about columns mb">
 					<div class="about__column">
-						<h2 class="about__title h">О компании</h2>
+						<h2 data-da=".about__column_main,768,first" class="about__title h">О компании</h2>
 					</div>
-					<div class="about__column">
+					<div class="about__column about__column_main">
 						<div class="about__decor decor"><span></span></div>
 						<p class="about__text">Консалтинговая компания «Простые Решения» готова предложить весь комплекс бухгалтерских услуг, кадровое администрирование, расчет зарплат, необходимые бизнесу юридические услуги, налоговое консультирование и помощь в решении налоговых споров.</p>
 						<div class="about__content">
 							<div class="about__image-body"><picture><source srcset="img/main-page/director.webp" type="image/webp"><img src="img/main-page/director.jpg" class="about__image" alt="Фотография директора"></picture></div>
 							<div class="about__body">
 								<blockquote class="about__blockquote">
-									<svg class="about__blockquote-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<svg class="about__blockquote-icon" viewBox="0 0 64 54" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M51.451 54c-4.322 0-7.739-1.326-10.248-3.977-2.37-2.79-3.556-6.488-3.556-11.093 0-8.65 1.952-16.116 5.856-22.395C47.407 10.116 53.263 4.605 61.072 0l2.51 3.558a56.891 56.891 0 0 0-8.785 7.535 32.965 32.965 0 0 0-6.065 9c-1.394 3.349-2.091 7.116-2.091 11.302l5.437-1.883c3.486 0 6.345 1.186 8.576 3.558C62.884 35.302 64 38.093 64 41.442c0 3.628-1.185 6.628-3.556 9C58.074 52.814 55.076 54 51.451 54zm-37.856 0c-4.323 0-7.67-1.326-10.04-3.977C1.186 47.233 0 43.535 0 38.93c0-8.65 1.882-16.116 5.647-22.395C9.551 10.116 15.407 4.605 23.216 0l2.51 3.558a62.6 62.6 0 0 0-8.576 7.535 32.963 32.963 0 0 0-6.065 9c-1.394 3.349-2.092 7.116-2.092 11.302l5.438-1.883c3.347 0 6.135 1.186 8.366 3.558 2.231 2.232 3.347 5.023 3.347 8.372 0 3.628-1.185 6.628-3.556 9C20.358 52.814 17.36 54 13.595 54z" fill="#3C1F53" />
 									</svg>
 									Задача организации, в особенности же дальнейшее развитие различных форм деятельности обеспечивает
@@ -88,14 +78,15 @@
 				</section>
 				<section class="page__services services columns mb">
 					<div class="services__info">
-						<h2 class="services__title h">Услуги</h2>
-						<p class="services__text">Доверяя Консалтинговой компании «Простые Решения», Вы получаете профессиональное ведение бухгалтерского и налогового учёта, полностью соответствующее действующему законодательству</p>
+						<p data-da=".services__column_main,768,first" class="services__text">Доверяя Консалтинговой компании «Простые Решения», Вы получаете профессиональное ведение бухгалтерского и налогового учёта, полностью соответствующее действующему законодательству</p>
+						<h2 data-da=".services__column_main,768,first" class="services__title h">Услуги</h2>
 						<div class="services__arrows">
 							<button type="button" title="Предыдущий слайд" class="services__arrow-prev arrow"></button>
+							<div class="services__pagination"></div>
 							<button type="button" title="Следующий слайд" class="services__arrow-next arrow"></button>
 						</div>
 					</div>
-					<div class="services__column">
+					<div class="services__column services__column_main">
 						<div class="services__decor decor"><span></span></div>
 						<div class="services__slider swiper">
 							<div class="services__wrapper swiper-wrapper">
@@ -110,35 +101,29 @@
 									<a href="#" class="services__button btn">Подробнее</a>
 								</div>
 								<div class="services__slide swiper-slide">
-									<picture><source srcset="img/main-page/slider-1.webp" type="image/webp"><img src="img/main-page/slider-1.jpg" alt="Изображение слайда" class="services__image"></picture>
+									<picture><source srcset="img/main-page/slider-2.webp" type="image/webp"><img src="img/main-page/slider-2.jpg" alt="Изображение слайда" class="services__image"></picture>
 									<p class="services__slide-text">Управленческий учёт</p>
 									<a href="#" class="services__button btn">Подробнее</a>
 								</div>
 								<div class="services__slide swiper-slide">
-									<picture><source srcset="img/main-page/slider-1.webp" type="image/webp"><img src="img/main-page/slider-1.jpg" alt="Изображение слайда" class="services__image"></picture>
-									<p class="services__slide-text">Полное бухгалтерское и налоговое сопровождение организаций и ИП</p>
+									<picture><source srcset="img/main-page/slider-2.webp" type="image/webp"><img src="img/main-page/slider-2.jpg" alt="Изображение слайда" class="services__image"></picture>
+									<p class="services__slide-text">Управленческий учёт</p>
 									<a href="#" class="services__button btn">Подробнее</a>
 								</div>
 								<div class="services__slide swiper-slide">
-									<picture><source srcset="img/main-page/slider-1.webp" type="image/webp"><img src="img/main-page/slider-1.jpg" alt="Изображение слайда" class="services__image"></picture>
-									<p class="services__slide-text">Полное бухгалтерское и налоговое сопровождение организаций и ИП</p>
-									<a href="#" class="services__button btn">Подробнее</a>
-								</div>
-								<div class="services__slide swiper-slide">
-									<picture><source srcset="img/main-page/slider-1.webp" type="image/webp"><img src="img/main-page/slider-1.jpg" alt="Изображение слайда" class="services__image"></picture>
-									<p class="services__slide-text">Полное бухгалтерское и налоговое сопровождение организаций и ИП</p>
+									<picture><source srcset="img/main-page/slider-2.webp" type="image/webp"><img src="img/main-page/slider-2.jpg" alt="Изображение слайда" class="services__image"></picture>
+									<p class="services__slide-text">Управленческий учёт</p>
 									<a href="#" class="services__button btn">Подробнее</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="services__column-empty"></div>
 				</section>
 				<section class="page__advantages advantages columns mb">
 					<div class="advantages__column">
 						<picture><source srcset="img/main-page/advantages1.webp" type="image/webp"><img src="img/main-page/advantages1.jpg" alt="Изображение"></picture>
 					</div>
-					<div class="advantages__column">
+					<div class="advantages__column advantages__column_main">
 						<div class="advantages__decor decor"><span></span></div>
 						<picture><source srcset="img/main-page/advantages2.webp" type="image/webp"><img class="advantages__main-image" src="img/main-page/advantages2.jpg" alt="Изображение"></picture>
 						<h2 class="advantages__title">Плюсы бухгалтерского аутсорсинга очевидны</h2>
@@ -157,26 +142,198 @@
 						<picture><source srcset="img/main-page/advantages3.webp" type="image/webp"><img src="img/main-page/advantages3.jpg" alt="Изображение"></picture>
 					</div>
 				</section>
+				<section class="page__price price columns mb">
+					<div class="price__column">
+						<h2 data-da=".price__column_main,768,first" class="price__title h">Прайс-лист</h2>
+					</div>
+					<div class="price__column price__column_main">
+						<div class="price__decor decor"><span></span></div>
+						<div class="price__content">
+							<h3 class="price__subtitle">Бухгалтерские услуги</h3>
+							<dl class="price__list">
+								<div class="price__item">
+									<dt class="price__service">Общая система налогообложения</dt>
+									<dd class="price__value">от 11 300 ₽/мес</dd>
+								</div>
+								<div class="price__item">
+									<dt class="price__service">УСНО 6% (доходы) или ЕНВД</dt>
+									<dd class="price__value">от 7 000 ₽/мес</dd>
+								</div>
+								<div class="price__item">
+									<dt class="price__service">УСНО 15% (доходы минус расходы)</dt>
+									<dd class="price__value">от 9 600 ₽/мес</dd>
+								</div>
+								<div class="price__item">
+									<dt class="price__service">Начисление заработной платы</dt>
+									<dd class="price__value">от 3 000 ₽/мес</dd>
+								</div>
+								<div class="price__item">
+									<dt class="price__service">Консультации</dt>
+									<dd class="price__value">от 1 000 ₽/час</dd>
+								</div>
+								<div class="price__item">
+									<dt class="price__service">3 НДФЛ для физ. лиц</dt>
+									<dd class="price__value">от 600 ₽</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+					<div class="price__column"></div>
+				</section>
+				<section class="page__staff staff columns mb">
+					<div class="staff__column">
+						<div class="staff__arrows">
+							<button title="Предыдущий слайд" type="button" class="staff__arrow-prev arrow"></button>
+							<button title="Следующий слайд" type="button" class="staff__arrow-next arrow"></button>
+						</div>
+					</div>
+					<div class="staff__column">
+						<div class="staff__decor decor"><span></span></div>
+						<h2 class="staff__title">Поиск и подбор персонала</h2>
+						<div class="staff__slider swiper">
+							<div class="staff__wrapper swiper-wrapper">
+								<div class="staff__slide swiper-slide">
+									<div class="staff__image"><picture><source srcset="img/main-page/slider2-1.webp" type="image/webp"><img src="img/main-page/slider2-1.jpg" alt="Изображение слайда"></picture></div>
+									<div class="staff__content">
+										<h3 class="staff__subtitle">Эконом</h3>
+										<p class="staff__text">Количество открытых вакансий в месяц: 1 – 2</p>
+										<ul class="staff__list">
+											<li class="staff__item icon-check">Мониторинг заработных плат/анализ рынка труда</li>
+										</ul>
+										<div class="staff__price">40 000 ₽/мес</div>
+									</div>
+								</div>
+								<div class="staff__slide swiper-slide">
+									<div class="staff__image"><picture><source srcset="img/main-page/slider2-2.webp" type="image/webp"><img src="img/main-page/slider2-2.jpg" alt="Изображение слайда"></picture></div>
+									<div class="staff__content">
+										<h3 class="staff__subtitle">Стандарт</h3>
+										<p class="staff__text">Количество открытых вакансий в месяц: 1 – 2</p>
+										<ul class="staff__list">
+											<li class="staff__item icon-check">Мониторинг заработных плат/анализ рынка труда</li>
+										</ul>
+										<div class="staff__price">60 000 ₽/мес</div>
+									</div>
+								</div>
+								<div class="staff__slide swiper-slide">
+									<div class="staff__image"><picture><source srcset="img/main-page/slider2-3.webp" type="image/webp"><img src="img/main-page/slider2-3.jpg" alt="Изображение слайда"></picture></div>
+									<div class="staff__content">
+										<h3 class="staff__subtitle">Бизнес</h3>
+										<p class="staff__text">Количество открытых вакансий в месяц: 1 – 2</p>
+										<ul class="staff__list">
+											<li class="staff__item">Мониторинг заработных плат/анализ рынка труда</li>
+											<li class="staff__item">Услуги при подборе Топ-менеджеров, а также cпециалистов среднего звена*</li>
+										</ul>
+										<div class="staff__price">80 000 ₽/мес</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__request request columns mb">
+					<div class="request__column">
+						<h2 class="request__title h">Заявка</h2>
+					</div>
+					<div class="request__column">
+						<div class="request__decor decor"><span></span></div>
+						<h3 class="request__subtitle">Хотите оптимизировать вашу бухгалтерию?Начните сотрудничество с нами прямо сейчас</h3>
+						<form data-dev action="#" class="request__form">
+							<h4 class="request__form-title">Заполните форму:</h4>
+							<input id="input" data-required autocomplete="off" type="text" name="form[]" data-error="" placeholder="Фамилия Имя Отчество*" class="request__input">
+							<input data-required data-phone-pattern autocomplete="off" type="text" name="form[]" data-error="" placeholder="Телефон*" class="request__input">
+							<input data-required="email" autocomplete="off" type="text" name="form[]" data-error="" placeholder="Электронная почта*" class="request__input">
+							<button type="submit" class="request__button btn">Отправить заявку</button>
+							<p class="request__text">Оставляя заявку, вы <a href="#">соглашаетесь</a> на условия обработки персональных данных.</p>
+						</form>
+					</div>
+					<div class="request__column"></div>
+				</section>
+				<section class="page__blog blog columns">
+					<div class="blog__column">
+						<h2 class="blog__title h">Блог компании</h2>
+					</div>
+					<div class="blog__column">
+						<div class="blog__decor decor"><span></span></div>
+						<h3 class="blog__subtitle">Полезная информация</h3>
+						<ul class="blog__list">
+							<li class="blog__item">
+								<picture><source srcset="img/main-page/blog-1.webp" type="image/webp"><img src="img/main-page/blog-1.jpg" alt="Изображение статьи" class="blog__image"></picture>
+								<div class="blog__content">
+									<div class="blog__date">12 января 2023</div>
+									<h4 class="blog__name">Налоговый календарь. Когда и по каким налогам отчитываться?</h4>
+									<a href="#" class="blog__show-more">Подробнее</a>
+								</div>
+							</li>
+							<li class="blog__item">
+								<picture><source srcset="img/main-page/blog-2.webp" type="image/webp"><img src="img/main-page/blog-2.jpg" alt="Изображение статьи" class="blog__image"></picture>
+								<div class="blog__content">
+									<div class="blog__date">6 января 2023</div>
+									<h4 class="blog__name">Обнуление деклараций</h4>
+									<a href="#" class="blog__show-more">Подробнее</a>
+								</div>
+							</li>
+							<li class="blog__item">
+								<picture><source srcset="img/main-page/blog-3.webp" type="image/webp"><img src="img/main-page/blog-3.jpg" alt="Изображение статьи" class="blog__image"></picture>
+								<div class="blog__content">
+									<div class="blog__date">26 декабря 2022</div>
+									<h4 class="blog__name">НДС на контроле</h4>
+									<a href="#" class="blog__show-more">Подробнее</a>
+								</div>
+							</li>
+						</ul>
+						<div class="blog__pagination">
+							<button type="button" class="blog__arrow-prev">
+								Назад
+								<img src="img/arrow.svg" alt="Предыдущий слайд">
+							</button>
+							<ul class="blog__pages">
+								<li class="blog__page"><button type="button" class="blog__page-button _active">1</button></li>
+								<li class="blog__page"><button type="button" class="blog__page-button">2</button></li>
+								<li class="blog__page"><button type="button" class="blog__page-button">3</button></li>
+								<li class="blog__page"><button type="button" class="blog__page-button">4</button></li>
+							</ul>
+							<button type="button" class="blog__arrow-next">Вперёд</button>
+						</div>
+					</div>
+					<div class="blog__column"></div>
+				</section>
 			</div>
 		</main>
 		<footer class="footer">
-			<div class="footer__container">
+			<div class="footer__container columns">
+				<div class="footer__column">
+					<h2 class="footer__title h">Контактная информация</h2>
+				</div>
+				<div class="footer__column">
+					<div class="footer__decor decor"><span></span></div>
+					<dl class="footer__contacts">
+						<div class="footer__contact-item">
+							<dt class="footer__dt">Наш адрес:</dt>
+							<dd class="footer__dd">Кемерово, пр. Михайлова, 3А, офис 204</dd>
+						</div>
+						<div class="footer__contact-item">
+							<dt class="footer__dt">Телефон:</dt>
+							<dd class="footer__dd"><a href="tel:88005553535">8 - 800 555-3535</a></dd>
+						</div>
+						<div class="footer__contact-item">
+							<dt class="footer__dt">E-mail:</dt>
+							<dd class="footer__dd"><a href="email:kkprostresh@yandex.ru">kkprostresh@.yandex.ru</a></dd>
+						</div>
+						<div class="footer__contact-item">
+							<dt class="footer__dt">ОГРН</dt>
+							<dd class="footer__dd">1224200013267</dd>
+						</div>
+						<div class="footer__contact-item">
+							<dt class="footer__dt">ИНН</dt>
+							<dd class="footer__dd">4205409987</dd>
+						</div>
+					</dl>
+				</div>
+				<div class="footer__column"></div>
 			</div>
 		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-			</div>
-		</div>
-	</div>
-</div>
- -->
-
-	<script src="js/app.min.js?_v=20230125131725"></script>
+	<script src="js/app.min.js?_v=20230126110154"></script>
 </body>
 
 </html>
