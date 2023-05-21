@@ -154,7 +154,7 @@ h6 {
   left: -5%;
   height: 0.25rem;
   border-radius: 2.6875rem;
-  background-color: #508BFF;
+  background-color: #3074fb;
 }
 
 .arrow {
@@ -179,7 +179,7 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
-  background-color: #508BFF;
+  background-color: #3074fb;
   position: relative;
   overflow: hidden;
 }
@@ -217,7 +217,7 @@ h6 {
 }
 
 .btn:hover {
-  background-color: #508BFF;
+  background-color: #3074fb;
   -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
@@ -245,7 +245,7 @@ h6 {
   height: 3rem;
   font-weight: 600;
   letter-spacing: -0.03em;
-  border: 1px solid #508BFF;
+  border: 1px solid #3074fb;
 }
 
 .h {
@@ -702,7 +702,7 @@ h6 {
 }
 
 .about__job {
-  color: #777777;
+  color: #535353;
 }
 
 .services {
@@ -941,7 +941,7 @@ h6 {
 }
 
 .advantages__item span {
-  color: #508BFF;
+  color: #3074fb;
   font-weight: 700;
 }
 
@@ -961,7 +961,7 @@ h6 {
 }
 
 .price__content {
-  background-color: #508BFF;
+  background-color: #3074fb;
   border-radius: 1rem;
   color: #fff;
   padding: 1.25rem;
@@ -1107,7 +1107,7 @@ h6 {
   border-radius: 1rem;
   overflow: hidden;
   color: #fff;
-  background-color: #508BFF;
+  background-color: #3074fb;
 }
 
 .staff__image {
@@ -1221,7 +1221,7 @@ h6 {
 }
 
 .request__input._form-focus {
-  border: 1px solid #508BFF;
+  border: 1px solid #3074fb;
 }
 
 .request__text {
@@ -1310,7 +1310,7 @@ h6 {
 
 .blog__date {
   font-weight: 400;
-  color: #7A7A7A;
+  color: #535353;
   letter-spacing: -0.03em;
 }
 
@@ -1327,7 +1327,7 @@ h6 {
 }
 
 .blog__show-more {
-  color: #508BFF;
+  color: #3074fb;
   letter-spacing: -0.03em;
   font-weight: 600;
   position: relative;
@@ -1340,7 +1340,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 0.0625rem;
-  background-color: #508BFF;
+  background-color: #3074fb;
 }
 
 .blog__pagination {
@@ -1360,7 +1360,7 @@ h6 {
   border-radius: 3.125rem;
   padding: 0.6875rem 0.3125rem;
   font-weight: 600;
-  color: #508BFF;
+  color: #3074fb;
   letter-spacing: -0.03em;
   width: 100%;
   max-width: 7rem;
@@ -1402,7 +1402,7 @@ h6 {
 }
 
 .blog__pages .swiper-pagination-bullet-active {
-  color: #508BFF;
+  color: #3074fb;
 }
 
 .blog__arrow-next img {
@@ -1665,7 +1665,7 @@ h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 2.5rem;
-    background-color: #508BFF;
+    background-color: #3074fb;
     -webkit-transform: translate(-200%, -50%);
         -ms-transform: translate(-200%, -50%);
             transform: translate(-200%, -50%);
@@ -1858,7 +1858,7 @@ h6 {
   }
 
   .footer__contacts a:hover {
-    color: #508BFF;
+    color: #3074fb;
   }
 
   .services__arrows button {
@@ -1890,7 +1890,7 @@ h6 {
   }
 
   .request__input:hover {
-    border: 1px solid #508BFF;
+    border: 1px solid #3074fb;
   }
 
   .request__text a {
@@ -1900,7 +1900,7 @@ h6 {
   }
 
   .request__text a:hover {
-    color: #508BFF;
+    color: #3074fb;
   }
 
   .blog__arrow-next:hover img {
